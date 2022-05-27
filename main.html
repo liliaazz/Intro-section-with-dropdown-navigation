@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="main.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>front-end mentor</title>
+</head>
+<body>
+    <nav class="navbar" style=" height: 60px;">
+        <div class="brand">
+             <a href="#"><img src="images/logo.svg"></a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <a href="#"><img src="images/icon-menu.svg" style="width: 25px;"></a>
+        </div>
+
+     <div id="cont-menu" >
+         <div id="closeMenu"><a><img src="images/icon-close-menu.svg"></a></div>         
+        <div class="content " id="menu">
+            
+          <div class="dropdown">
+           <a href="#" id="featurebtn">
+               features <img id="featureImg" src="images/icon-arrow-up.svg">
+           </a>
+           <div id="container_feat_cont">
+               <div class="hiddencontentfeatures">
+               <a href="http://www.w3schools.com" style="cursor: pointer;"><img src="images/icon-todo.svg">todo list</a>
+               <a href="#"><img src="images/icon-calendar.svg">calendar</a>
+               <a href="#"><img src="images/icon-reminders.svg">reminders</a>
+               <a href="#"><img src="images/icon-planning.svg">planning</a>
+               </div>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a id="companyBtn" href="#">
+                company <img id="companyImg" src="images/icon-arrow-up.svg">
+            </a>
+               
+            <div id="container_comp_cont"><div class="hiddencontentcompany" id="hiddencontentcompany">
+                <a href="http://www.w3schools.com" >History</a>
+                <a href="#" >Our team</a>
+                <a href="#" >Blog</a>
+               </div>
+            </div>  
+         </div>
+
+         <a href="#" class="Careers">Careers</a>
+         <a href="#" class="About">About</a>
+        </div>
+
+        <div class="loginpage" id="loginpage">
+           <a href="#" class="login" id="login">Login</a>
+          <div  class="register" id="register"><button><a href="#"> Register</a></button></div> 
+        </div></div>
+    </nav>
+
+
+    <section class="container">
+        <div class="text-part">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location streamline processes,
+                 create team rituals, and watch productivity soar.
+            </p>
+            <button>Learn more</button>
+            <div class="sponsors">
+                <img src="images/client-databiz.svg">
+                <img src="images/client-audiophile.svg">
+                <img src="images/client-meet.svg">
+                <img src="images/client-maker.svg">
+            </div>
+        </div>
+        <div class="image-part" >
+            <img src="images/image-hero-desktop.png" id="deskImg">
+            <img src="images/image-hero-mobile.png" alt="mobileImg" id="mobileImg">
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>

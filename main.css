@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Epilogue:wght@500;700&display=swap');
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+#cont-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    background-color: #FAFAFA;
+}
+
+body {
+    font-family: 'Epilogue', sans-serif  !important;
+    margin: 0;
+    padding: 0;
+    color: hsl(0, 0%, 41%);
+    background-color: #FAFAFA;
+}
+
+.hiddencontentfeatures ,.hiddencontentcompany  {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    border: 1px solid grey;
+    background-color: white;
+    padding: 15px;
+}
+
+.hiddencontentcompany{
+    border-radius: 15px;
+}
+
+#container_comp_cont{
+    display: none;
+}
+
+#container_feat_cont{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    width: 75%;
+}
+
+.dropdown , .Careers , .brand, .About {
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.hiddencontentfeatures {
+    margin-top: 5px;
+    margin-top: 8px;
+    border-radius: 15px;
+
+}
+
+.hiddencontentfeatures img {
+    margin-right: 8px;
+}
+
+#featurebtn {
+    margin-left: 25px;
+    color: hsl(0, 0%, 41%);
+    text-decoration: none;
+}
+
+#companyBtn{
+    color: hsl(0, 0%, 41%);
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+
+
+.hiddencontentfeatures a , .hiddencontentcompany a{
+    margin-top: 4px;
+    color: hsl(0, 0%, 41%);
+    overflow: visible;
+    cursor: pointer;
+}
+
+.brand {
+    margin-left: 20px;
+}
+
+.loginpage {
+    margin-left: 415px;
+    margin-right: 30px;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.loginpage button {
+    background-color: #FAFAFA;
+    border-radius: 10px;
+    border-color: hsl(0, 0%, 41%);
+    height: 40px;
+    padding: 10px 10px 10px 10px;
+}
+
+.loginpage button a {
+    color: hsl(0, 0%, 41%);
+}
+
+.About ,.Careers {
+    margin-left: 15px;
+    color: hsl(0, 0%, 41%); 
+}
+
+.loginpage a {
+    color: hsl(0, 0%, 41%);
+    margin-top: 20px;
+}
+
+.login{
+    margin-right: 30px;
+    text-decoration: none;
+}
+
+.loginpage .register {
+    margin-top: 8px;
+    text-decoration: none;
+}
+
+.register a {
+    font-family: 'Epilogue', sans-serif  !important;
+    text-decoration: none;
+}
+
+h1 {
+    color: black;
+    font-size: 55px;
+    margin-top: 115px;
+}
+
+.text-part{
+    margin-left: 90px;
+}
+
+.text-part button {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+    padding: 14px;
+    font-family: 'Epilogue', sans-serif;
+    cursor: pointer;
+}
+
+.text-part button:hover {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+.text-part p {
+    line-height: 1.9em;
+}
+
+.sponsors {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-top: 50px;
+}
+
+.sponsors img {
+    height: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-part img {
+    margin-top: 10px;
+    margin-left: 90px;
+}
+
+#mobileImg{
+    display: none;
+}
+
+
+#closeMenu{
+    display: none;
+}
+
+.image-part img {
+    height: 550px;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1001px) {
+    .loginpage{
+        margin-left: 4px;
+    }
+}
+
+
+@media only screen and (max-width : 1000px) and (min-width: 760px){
+    .loginpage{
+        margin-left: 30px;
+    }
+    .image-part img{
+        margin-top: 100px;
+        margin-left: 40px;
+        height: 380px;
+    }
+    .text-part{
+        margin-left: 10px;
+    }
+    h1{
+        font-size: 40px;
+    }
+    .hamburger{
+        display: none;
+    }
+    .loginpage{
+        margin-right: 70px;
+    }
+    .login{
+        margin-right: 10px;
+    }
+    .login{
+        font-size: 14px;
+    }
+    .content{
+        gap: 10px;
+    }
+}
+
+
+
+@media only screen and (max-width : 380px){
+    
+    #closeMenu{
+        margin-left: 180px;
+        margin-top: 15px;
+        }
+        .active{
+            width: 65%;
+            margin-left: 145px;
+            height: 100%;
+            z-index: 1;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            background-color: #FAFAFA;
+        }
+    
+        .content{
+            display: flex;
+            flex-direction: column;
+        }
+        .hamburger{
+            display: block;
+            margin-top: 17px;
+            margin-left: 220px;
+        }
+    
+        html, body {
+            margin: 0 auto;
+            overflow-x: hidden;
+            position:relative;
+    
+          }
+    
+        .image-part{
+         order: -1;
+         margin-top: 15px;
+        }
+        
+        .container {
+            grid-template-columns: 1fr;
+            max-width: 205px;
+            margin-right: 0px;
+        }
+    
+        .navbar{
+            max-width: 205px;
+            margin-right: 0px;
+        }
+    
+        #mobileImg{
+            display: block;
+            height: 270px;
+            margin-left: 0px;
+        }
+    
+        #deskImg {
+            display: none;
+        }
+    
+        .brand img {
+            height: 25px;
+        }
+        .brand {
+            margin-left: 14px;
+        }
+    
+        .text-part button, .text-part p {
+            margin-left: 0px;
+        }
+    
+        .text-part p {
+            font-size: 14px;
+            line-height: 1.9em;
+        }
+        
+        h1 {
+            margin-left: 0px;
+            font-size: 35px;
+            margin-top: 30px;
+        }
+        .text-part{
+            text-align: center;
+            width: 365px;
+            margin-left: 0px;
+        }
+        .image-part{
+            max-width: 205px;
+        }
+    
+        .sponsors img {
+            width: 80px;
+        }
+        .sponsors {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 13px;
+            margin-top: 40px;
+            margin-left: 0px;
+        }
+    
+       .loginpage{
+        display: flex;
+        flex-direction: column; 
+        text-align: center;
+        justify-content: center;
+        margin-left: 30px;
+        margin-top: 10px;
+       }
+    
+       .login{
+           margin-left: 35px;
+       }
+       .register{
+           margin-left: 8px;
+       }
+       .register button {
+        padding-left: 45px;
+        padding-right: 45px;
+       }
+    
+    
+    
+       #featurebtn, #companyBtn, .Careers, .About{
+           margin-left: 25px;
+     
+       }
+       #cont-menu{
+        display: none;
+       }
+    
+       .hiddencontentcompany , .hiddencontentfeatures{
+           margin-left: 35px;
+           border: none;
+           background-color: #FAFAFA;
+           text-decoration: none;
+       }
+       .hiddencontentcompany a, .hiddencontentfeatures a {
+        text-decoration: none;   
+       }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 425px) and (min-width: 379px) {
+
+    #closeMenu{
+    margin-left: 220px;
+    margin-top: 15px;
+    }
+    .active{
+        width: 65%;
+        margin-left: 145px;
+        height: 100%;
+        z-index: 1;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #FAFAFA;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .hamburger{
+        display: block;
+        margin-top: 17px;
+        margin-left: 255px;
+    }
+
+    html, body {
+        margin: 0 auto;
+        overflow-x: hidden;
+        position:relative;
+
+      }
+
+    .image-part{
+     order: -1;
+     margin-top: 15px;
+    }
+    
+    .container {
+        grid-template-columns: 1fr;
+        max-width: 205px;
+        margin-right: 0px;
+    }
+
+    .navbar{
+        max-width: 205px;
+        margin-right: 0px;
+    }
+
+    #mobileImg{
+        display: block;
+        height: 310px;
+        margin-left: 0px;
+    }
+
+    #deskImg {
+        display: none;
+    }
+
+    .brand img {
+        height: 25px;
+    }
+    .brand {
+        margin-left: 14px;
+    }
+
+    .text-part button, .text-part p {
+        margin-left: 0px;
+    }
+
+    .text-part p {
+        font-size: 14px;
+        line-height: 1.9em;
+    }
+    
+    h1 {
+        margin-left: 0px;
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    .text-part{
+        text-align: center;
+        width: 410px;
+        margin-left: 0px;
+    }
+    .image-part{
+        max-width: 205px;
+    }
+
+    .sponsors img {
+        width: 80px;
+    }
+    .sponsors {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 40px;
+        margin-left: 0px;
+    }
+
+   .loginpage{
+    display: flex;
+    flex-direction: column; 
+    text-align: center;
+    justify-content: center;
+    margin-left: 45px;
+    margin-top: 10px;
+   }
+
+   .login{
+       margin-left: 35px;
+   }
+   .register{
+       margin-left: 8px;
+   }
+   .register button {
+    padding-left: 45px;
+    padding-right: 45px;
+   }
+
+
+
+   #featurebtn, #companyBtn, .Careers, .About{
+       margin-left: 25px;
+ 
+   }
+   #cont-menu{
+display: none;
+   }
+
+   .hiddencontentcompany , .hiddencontentfeatures{
+       margin-left: 35px;
+       border: none;
+       background-color: #FAFAFA;
+       text-decoration: none;
+   }
+   .hiddencontentcompany a, .hiddencontentfeatures a {
+    text-decoration: none;   
+   }
+}
